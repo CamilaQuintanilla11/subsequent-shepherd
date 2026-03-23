@@ -6,6 +6,7 @@ export default function User(){
         const response = await feth ('https://randomuser.me/api/');
         const data = await response.json();
         const randomUser = data.result[0];
+        console.log(randomUser);
         setUser(randomUser.name.first);
     }
     const [user, setUser] = useState("");
