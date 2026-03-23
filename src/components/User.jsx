@@ -3,7 +3,7 @@ import { useState } from 'preact/hooks';
 export default function User(){
 
     const randomUser = async() => {
-        const response = await feth ('https://randomuser.me/api/');
+        const response = await fetch ('https://randomuser.me/api/');
         const data = await response.json();
         const randomUser = data.result[0];
         console.log(randomUser);
