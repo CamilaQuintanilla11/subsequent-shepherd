@@ -14,7 +14,7 @@ export default function User(){
     return (
         <div>
             <h3>{user}! Thank you for visiting!</h3>
-            <button onClick={() => randomUser}>
+            <button onClick={() => randomUser()}>
                 New User
             </button>
         </div>
